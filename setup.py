@@ -4,7 +4,7 @@ from setuptools import Extension, setup
 
 setup(
     name="cfnv1a",
-    version="0.1.1",
+    version="0.1.2",
     ext_modules=[Extension("cfnv1a", ["cfnv1a.c"])],
     description="fnv1a c implementation for python",
     long_description=open("README.md").read(),

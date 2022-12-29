@@ -21,7 +21,7 @@ static PyObject* fnv1a(PyObject *self, PyObject *args, PyObject *kwds) {
         result = result ^ key[i];
         result = result * prime;
     }
-    return PyLong_FromLong(result);
+    return PyLong_FromUnsignedLongLong(result);
 }
 
 
