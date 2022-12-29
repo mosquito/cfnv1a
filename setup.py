@@ -4,7 +4,7 @@ from setuptools import Extension, setup
 
 setup(
     name="cfnv1a",
-    version="0.1.0",
+    version="0.1.1",
     ext_modules=[Extension("cfnv1a", ["cfnv1a.c"])],
     description="fnv1a c implementation for python",
     long_description=open("README.md").read(),
@@ -13,6 +13,7 @@ setup(
     author="Dmitry Orlov",
     author_email="me@mosquito.su",
     url="https://github.com/mosquito/cfnv1a/",
+    keywords=["fnv1a", "c"],
     packages=["."],
     classifiers=[
         "Intended Audience :: Developers",
@@ -32,7 +33,4 @@ setup(
         "Topic :: Software Development",
     ],
     python_requires=">=3.7.*, <4",
-    extras_require={
-        "develop": ["pytest"],
-    },
 )
