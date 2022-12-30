@@ -14,7 +14,7 @@ static PyObject* fnv1a(PyObject *self, PyObject *args, PyObject *kwds) {
     static char *kwlist[] = {"key", "prime", "offset", NULL};
 
     if (!PyArg_ParseTupleAndKeywords(
-        args, kwds, "z#|ii", kwlist, &key, &len, &prime, &offset
+        args, kwds, "z#|KK", kwlist, &key, &len, &prime, &offset
     )) return NULL;
 
     for(int i=0; i<len; i++) {
